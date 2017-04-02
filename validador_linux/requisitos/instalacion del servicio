@@ -1,0 +1,7 @@
+# Prerequisito
+# Debes tener instalado start-stop-deamon
+
+# Installation
+# - Move el archivo validadmifarm to /etc/init.d/validadmifarm
+# - Asigna permisos de ejecucion chmod +x validadmifarm
+# - Corrije la direccion del script de php
