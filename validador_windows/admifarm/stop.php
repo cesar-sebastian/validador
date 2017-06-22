@@ -1,8 +1,11 @@
-<?php
+<?php	
+	
 	if ( ( status('leer') == 'started' ) )
 	{
     	status('escribir', 'stoping');
-	}
+	}	
+	
+	exit();
 	
 	function status($accion, $valor='')
 	{

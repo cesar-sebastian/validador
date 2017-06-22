@@ -24,9 +24,13 @@ if( empty($ida) || empty($bkp) || empty($rta) || empty($logger) || empty($wsdl) 
     exit();
 }
 
+//$ida = str_replace('\\', DIRECTORY_SEPARATOR, $ida);
+//$bkp = str_replace('\\', DIRECTORY_SEPARATOR, $bkp);
+//$rta = str_replace('\\', DIRECTORY_SEPARATOR, $rta);
+
 status('escribir','started');
 
-while ( status('leer') <> 'stoping') {
+while ( status('leer') <> 'stoping' and status('leer') <> 'stoped') {
 	launcher();
     sleep($frecuency);
 }
